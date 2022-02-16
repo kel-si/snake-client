@@ -19,6 +19,11 @@ const connect = function () {
     conn.write('Name: KEO')
   });
 
+  conn.on("connect", () => {
+    // setTimeout(() => {console.log("Move: up")}, 5000);
+    // setTimeout(() => {console.log("Move: up")}, 7000);
+  })
+
   // interpret incoming data as text
   conn.setEncoding("utf8");
 
@@ -26,4 +31,4 @@ const connect = function () {
   return conn;
 };
 
-module.exports = connect;
+module.exports = {connect};
