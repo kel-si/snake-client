@@ -9,12 +9,15 @@ const connect = function () {
   })
   conn.on("connect", () => {
     console.log("successfully connected", )
-  }
-);
+  });
 
-conn.on('data', (data) => {
-  console.log(data);
-});
+  conn.on('data', (data) => {
+    console.log(data);
+  });
+
+  conn.on("connect", () => {
+    conn.write('Name: KEO')
+  });
 
   // interpret incoming data as text
   conn.setEncoding("utf8");
