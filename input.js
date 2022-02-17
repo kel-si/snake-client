@@ -31,6 +31,12 @@ const setupInput = function (conn) {
       if( key === 'd') {
         connection.write("Move: right")
       }
+      if( key === 't') {
+        connection.write("Say: im a snake")
+      }
+      if( key === 'r') {
+        connection.write("Say: food!")
+      }
   };
   
 
