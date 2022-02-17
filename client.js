@@ -19,10 +19,10 @@ const connect = function () {
     conn.write('Name: KEO')
   });
 
-  conn.on("connect", () => {
-    // setTimeout(() => {console.log("Move: up")}, 5000);
-    // setTimeout(() => {console.log("Move: up")}, 7000);
-  })
+  // conn.on("connect", () => {
+  //   setTimeout(() => {console.log("Move: up")}, 5000);
+  //   setTimeout(() => {console.log("Move: up")}, 7000);
+  // })
 
   // interpret incoming data as text
   conn.setEncoding("utf8");
